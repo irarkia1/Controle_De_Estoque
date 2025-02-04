@@ -10,18 +10,21 @@ class AddProduct{
     private:
         //var 
             int idProduto;
-    
-    protected:
-        //var 
+            std::string nomeProduto;
+            double quantidade
             int embalagemUnidade;
             double embalagemMetro, embalagemlitros, embalagemMetroCubico, EmbalagemMetroQuadrado;
-        
-        //Method
-            
+
+    protected:
+        bool AddExist(int id);
 
     public:
         //var 
-            std::string nomeProduto;
+        
+        //Method
+           void CrudAddProduct(int id, std::string nome, double quantidade);
+    
+
 };
 
 #endif //ADD_H
