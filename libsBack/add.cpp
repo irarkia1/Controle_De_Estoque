@@ -1,24 +1,6 @@
 //libs create
 #include "add.h"
-
-void crudAddProduct(int id, std::string nome, int quantidade){
-    std::ofstream addFiler("Estoque.txt", std::ios::app);
-    std::string linha;
-
-    if(AddExist(id)){
-        if(addFiler.is_open()){
-            std::cerr <<"Adicionado com sucesso\n"<< std::endl;
-            
-            addFiler << id << "," << nome << "," << quantidade;
-        }else{
-            std::cerr << "Erro ao tentar adicionar novo" << std::endl;
-        }
-        AddExist.close();
-    }
-    
-}
-
-bool AddExist(int id){
+bool AddProduct::AddExist(int id){
     std::ifstream consultIdFiler("Estoque.txt");
     
     std::string linha, lixo;
@@ -30,7 +12,7 @@ bool AddExist(int id){
             std::string tempString;
 
             try{
-                getline(ss, tempString, ",");
+                getline(ss, tempString, ',');
                 idList = stoi(tempString);
 
                 if(idList == id){
@@ -49,3 +31,19 @@ bool AddExist(int id){
     return false;
 }
 
+void AddProduct::CrudAddProduct(int id, std::string nome, double quantidade){
+    std::ofstream addFiler("Estoque.txt", std::ios::app);
+    std::string linha;
+    
+    if(AddExist(id)){
+        if(addFiler.is_open()){
+            std::cerr <<"Adicionado com sucesso\n"<< std::endl;
+            
+            addFiler << id << "," << nome << "," << quantidade;
+        }else{
+            std::cerr << "Erro ao tentar adicionar novo" << std::endl;
+        };
+        addFiler.close();
+    }
+    
+}
