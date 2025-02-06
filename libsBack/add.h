@@ -11,7 +11,7 @@ class AddProduct{
         //var 
             int idProduto;
             std::string nomeProduto;
-            double quantidade
+            double quantidade;
             int embalagemUnidade;
             double embalagemMetro, embalagemlitros, embalagemMetroCubico, EmbalagemMetroQuadrado;
 

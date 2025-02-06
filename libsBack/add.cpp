@@ -2,37 +2,50 @@
 #include "add.h"
 
 void crudAddProduct(int id, std::string nome, int quantidade){
-    ofstream addFiler("Estoque.txt", ios::app);
+    std::ofstream addFiler("Estoque.txt", std::ios::app);
+    std::string linha;
 
+    if(AddExist(id)){
+        if(addFiler.is_open()){
+            std::cerr <<"Adicionado com sucesso\n"<< std::endl;
+            
+            addFiler << id << "," << nome << "," << quantidade;
+        }else{
+            std::cerr << "Erro ao tentar adicionar novo" << std::endl;
+        }
+        AddExist.close();
+    }
+    
 }
 
 bool AddExist(int id){
     std::ifstream consultIdFiler("Estoque.txt");
-    if(!consultIdFiler){
-        std::cerr << "Erro ao consultar o ID" << std::endl;
-        return false;
-    }
-
+    
     std::string linha, lixo;
     int idList;
 
-    while (getline(consultIDFiler, linha)) {
-        std::stringstream ss(linha);
-        std::string tempString;
+    if(consultIdFiler.is_open()){ 
+        while (getline(consultIdFiler, linha)) {
+            std::stringstream ss(linha);
+            std::string tempString;
 
-        try{
-            getline(ss, tempString, ",");
-            idList = stoi(tempString);
+            try{
+                getline(ss, tempString, ",");
+                idList = stoi(tempString);
 
-            if(idList == id){
-            return true;
+                if(idList == id){
+                return true;
 
+                }
+            }catch(const std::exception &e){
+                std::cerr << "Erro ao processar linha" << linha << std::endl;
+                continue;
             }
-        }catch(const std::exception &e){
-            std::cerr << "Erro ao processar linha" << linha << std::endl;
-            continue;
         };
+    }else{
+         std::cerr << "Erro ao consultar o ID" << std::endl;
     }
+    consultIdFiler.close();
     return false;
 }
 

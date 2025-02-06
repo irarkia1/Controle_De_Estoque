@@ -23,19 +23,28 @@ typedef struct{
         //Method
             void InteractionOptionCrud(){
                 std::cout << "\n1- Criar Produto\n2-Listar Produto\n3-Editar Produto\n4-Remover Produto" << std::endl;
-                cin >> opcao;
-            }
+                std::cin >> opcao;
+                CrudOption(opcao);
+            };
 
             void CrudOption(int opcao){
                 int exit = 0;
                 do {
-                switch (opcao) {
-                    case opcao == 1:{
+                switch (opcao){
+                    case 1:{
+                        std::cout << "ID:";
+                        std::cin >> id;
+                        std::cout << "Nome do produto:";
+                        std::cin.ignore();
+                        std::getline(std::cin, nome);
+                        std::cout << "Quantidade:";
+                        std::cin >> quantidade;
                         addProduct.CrudAddProduct(id, nome, quantidade);
-                    }
-                }
-                }while (!exit == 1)
-            }
+                        break;
+                    };
+                };
+                }while (!exit == 1);
+            };
 
 } FirstDate;
 #endif //#define USER_INTERACTION_H
