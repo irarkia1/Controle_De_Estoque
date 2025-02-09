@@ -5,6 +5,8 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <sys/stat.h>
+#include <cstdlib>
 
 class AddProduct{
     private:
@@ -15,8 +17,12 @@ class AddProduct{
             int embalagemUnidade;
             double embalagemMetro, embalagemlitros, embalagemMetroCubico, EmbalagemMetroQuadrado;
 
+
     protected:
         bool AddExist(int id);
+        bool fileExists(const std::string &filename);
+        void limparTela();
+
 
     public:
         //var 
