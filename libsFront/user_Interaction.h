@@ -8,10 +8,14 @@
 
 //libs create
 #include "../libsBack/add.h"
+#include "../libsBack/read.h"
+#include "../libsBack/del.h"
 
 
 struct FirstDate{
 AddProduct addProduct;
+ReadeList readeList;
+DeletItrem deletItrem;
     //public:
        // setlocale(LC_ALL, "")
         //var

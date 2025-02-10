@@ -52,7 +52,7 @@ void AddProduct::CrudAddProduct(int id, std::string nome, double quantidade){
             limparTela();
             std::cerr << "Adicionado com sucesso\n"<< std::endl;
             
-            addFiler << id << "," << nome << "," << quantidade;
+            addFiler << id << "," << nome << "," << quantidade << std::endl;
         };
         addFiler.close();
     }else{

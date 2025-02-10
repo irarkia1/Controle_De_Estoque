@@ -24,7 +24,23 @@ void FirstDate::CrudOption(int opcao){
                 InteractionOptionCrud();
                 exit = 0;
                 break;
-            };
+            }
+            case 2:{
+                std::cin.ignore();
+                readeList.ListItens();
+                std::cin.ignore();
+                InteractionOptionCrud();
+                break;
+            }
+            case 3:{
+                int sherchID;
+                std::cout << "Deletar ID: ";
+                std::cin >> sherchID;
+                //deletItrem.Verification();
+                deletItrem.DelItrem(sherchID);
+                std::cin.ignore();
+                InteractionOptionCrud();
+            }
         };
     }while (!exit == 0);
 };
