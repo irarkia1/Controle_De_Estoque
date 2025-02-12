@@ -34,6 +34,14 @@ void FirstDate::CrudOption(int opcao){
             }
             case 3:{
                 int sherchID;
+                std::cout << "Editar ID: ";
+                std::cin >> sherchID;
+                upDateItens.Update(id);
+                std::cin.ignore();
+                InteractionOptionCrud();
+            }
+            case 4:{
+                int sherchID;
                 std::cout << "Deletar ID: ";
                 std::cin >> sherchID;
                 //deletItrem.Verification();

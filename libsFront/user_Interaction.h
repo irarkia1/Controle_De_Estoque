@@ -10,12 +10,13 @@
 #include "../libsBack/add.h"
 #include "../libsBack/read.h"
 #include "../libsBack/del.h"
-
+#include "../libsBack/up.h"
 
 struct FirstDate{
 AddProduct addProduct;
 ReadeList readeList;
 DeletItrem deletItrem;
+UpDateItens upDateItens;
     //public:
        // setlocale(LC_ALL, "")
         //var
