@@ -17,8 +17,7 @@ AddProduct addProduct;
 ReadeList readeList;
 DeletItrem deletItrem;
 UpDateItens upDateItens;
-    //public:
-       // setlocale(LC_ALL, "")
+    public:
         //var
             int id, embalagem, opcao;
             double quantidade;
@@ -28,6 +27,9 @@ UpDateItens upDateItens;
         //Method
             void InteractionOptionCrud();
             void CrudOption(int opcao);
+    private:
+        //var
+            bool exit = true;
 
 };
 #endif //#define USER_INTERACTION_H
