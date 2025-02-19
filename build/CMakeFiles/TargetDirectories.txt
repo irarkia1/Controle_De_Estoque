@@ -1,0 +1,3 @@
+C:/Users/irark/Documents/GitHub/Controle_De_Estoque/build/CMakeFiles/Estocom.dir
+C:/Users/irark/Documents/GitHub/Controle_De_Estoque/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/irark/Documents/GitHub/Controle_De_Estoque/build/CMakeFiles/ZERO_CHECK.dir

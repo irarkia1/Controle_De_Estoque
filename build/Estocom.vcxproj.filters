@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\irark\Documents\GitHub\Controle_De_Estoque\conEst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\irark\Documents\GitHub\Controle_De_Estoque\libsBack\add.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\irark\Documents\GitHub\Controle_De_Estoque\libsBack\del.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\irark\Documents\GitHub\Controle_De_Estoque\libsBack\read.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\irark\Documents\GitHub\Controle_De_Estoque\libsBack\up.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\irark\Documents\GitHub\Controle_De_Estoque\libsFront\user_interaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\irark\Documents\GitHub\Controle_De_Estoque\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E88A828D-AEA1-3CBE-85AB-F05CC06D8CBF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

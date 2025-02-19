@@ -1,0 +1,10 @@
+^C:\USERS\IRARK\DOCUMENTS\GITHUB\CONTROLE_DE_ESTOQUE\BUILD\CMAKEFILES\E321FAE9827C6612EF657198401B30ED\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/irark/Documents/GitHub/Controle_De_Estoque -BC:/Users/irark/Documents/GitHub/Controle_De_Estoque/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/irark/Documents/GitHub/Controle_De_Estoque/build/Controle_De_Estoque.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

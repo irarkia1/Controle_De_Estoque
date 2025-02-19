@@ -2,7 +2,12 @@
 #define UP_H
 
 //libs standard
-#include <bits/stdc++.h>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <string>
+#include <iomanip>
+#include <vector>
 
 class UpDateItens{
     public:

@@ -1,0 +1,8 @@
+# ninja log v6
+14	1213	7616344951190608	CMakeFiles/Estocom.dir/libsBack/add.cpp.obj	1f27033bd86d6ad1
+24	1254	7616344951290553	CMakeFiles/Estocom.dir/libsBack/read.cpp.obj	207a85a595a0bf7f
+18	1288	7616344951230590	CMakeFiles/Estocom.dir/libsBack/del.cpp.obj	700936b72365f771
+7	1315	7616344951128711	CMakeFiles/Estocom.dir/conEst.cpp.obj	aeed3de1e34e131c
+43	1381	7616344951480434	CMakeFiles/Estocom.dir/libsBack/up.cpp.obj	908c57d30c1e5cd3
+55	1383	7616344951600353	CMakeFiles/Estocom.dir/libsFront/user_interaction.cpp.obj	e757ea9390ce6d38
+1384	1630	7616344964881274	Estocom.exe	e0688239888ebe9

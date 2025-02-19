@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\irark\Documents\GitHub\Controle_De_Estoque\build\CMakeFiles\e321fae9827c6612ef657198401b30ed\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{055B8CE8-0BE5-3DFC-A4E2-22DAF9CFC52E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
